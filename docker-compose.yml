@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  loconotion:
+    build: .
+    image: loconotion:latest
+    volumes:
+      - ./dist:/app/loconotion/dist
+    restart: always

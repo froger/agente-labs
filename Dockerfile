@@ -29,4 +29,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY . .
-ENTRYPOINT [ "python", "loconotion", "--chromedriver", "/chromedriver/chromedriver-linux64/chromedriver", "site.toml"]
+CMD [ "python", "loconotion", "--chromedriver", "/chromedriver/chromedriver-linux64/chromedriver", "site.toml"]
